@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .link {
+    @apply font-bold text-white underline underline-offset-1 
+    decoration-sky-400 hover:decoration-pink-500 duration-150;
+  }
+}
+
 html,
 body {
   padding: 0;

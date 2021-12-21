@@ -11,7 +11,7 @@ export default function Home() {
         <title>Hubert Jóźwiak</title>
         <meta name="description" content="portfolio of software engineer" />
       </Head>
-      <div className="font-bold text-3xl ">
+      <div className="font-bold text-3xl">
         Hi, I&apos;m Hubert! <Emoji symbol="👋" label="waving hand" />
       </div>
       <div className="my-4 text-lg">
@@ -22,14 +22,24 @@ export default function Home() {
         </p>
       </div>
 
-      <Link href="/projects" passHref>
+      <Link href="/about" passHref>
         <button className="w-full">
-          <Card>Projects</Card>
+          <Card>About</Card>
         </button>
       </Link>
       <Link href="/blog" passHref>
         <button className="w-full">
           <Card>Blog</Card>
+        </button>
+      </Link>
+      <Link href="/projects" passHref>
+        <button className="w-full">
+          <Card>Projects</Card>
+        </button>
+      </Link>
+      <Link href="/contact" passHref>
+        <button className="w-full">
+          <Card>Contact</Card>
         </button>
       </Link>
     </div>
