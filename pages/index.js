@@ -6,7 +6,7 @@ import Emoji from "../components/emoji";
 
 export default function Home() {
   return (
-    <div className="max-w-2xl m-auto py-10">
+    <div className="max-w-2xl m-auto">
       <Head>
         <title>Hubert Jóźwiak</title>
         <meta name="description" content="portfolio of software engineer" />

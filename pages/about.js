@@ -7,7 +7,7 @@ export default function Contact() {
   const github = "https://github.com/ivirtex";
 
   return (
-    <div className="max-w-2xl m-auto py-10">
+    <div className="max-w-2xl m-auto">
       <Head>
         <title>About me</title>
       </Head>
@@ -34,7 +34,7 @@ export default function Contact() {
         <Link href="/contact" passHref>
           <a className="link">/contact</a>
         </Link>{" "}
-        Check out my{" "}
+        and check out my{" "}
         <a href={github} target="_blank" rel="noreferrer" className="link">
           GitHub
         </a>{" "}

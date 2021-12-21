@@ -4,7 +4,7 @@ import Card from "../../components/card";
 
 export default function Projects() {
   return (
-    <div className="max-w-2xl m-auto py-10">
+    <div className="max-w-2xl m-auto">
       <Head>
         <title>Projects</title>
       </Head>

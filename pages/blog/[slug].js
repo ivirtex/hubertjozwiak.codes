@@ -15,7 +15,7 @@ export default function PostPage({
   mdxSource,
 }) {
   return (
-    <div className="max-w-3xl m-auto py-10">
+    <div className="max-w-3xl m-auto">
       <Head>
         <title>{title}</title>
       </Head>

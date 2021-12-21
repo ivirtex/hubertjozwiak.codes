@@ -9,7 +9,7 @@ import { sortByDate } from "../../utils/sortByDate";
 
 export default function Blog({ posts }) {
   return (
-    <div className="max-w-2xl m-auto py-10">
+    <div className="max-w-2xl m-auto">
       <Head>
         <title>Blog</title>
       </Head>
