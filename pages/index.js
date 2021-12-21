@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
+
 import Card from "../components/card";
+import Emoji from "../components/emoji";
 
 export default function Home() {
   return (
@@ -9,7 +11,9 @@ export default function Home() {
         <title>Hubert Jóźwiak</title>
         <meta name="description" content="portfolio of software engineer" />
       </Head>
-      <div className="font-bold text-3xl ">Hi, I&apos;m Hubert! 👋</div>
+      <div className="font-bold text-3xl ">
+        Hi, I&apos;m Hubert! <Emoji symbol="👋" label="waving hand" />
+      </div>
       <div className="my-4 text-lg">
         <p>Welcome to my website!</p>
         <p>

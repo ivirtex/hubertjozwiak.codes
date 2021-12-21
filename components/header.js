@@ -1,5 +1,5 @@
-import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
+
 import Button from "./button";
 
 export default function Header() {
@@ -21,7 +21,7 @@ export default function Header() {
         <Link href="/projects" passHref>
           <Button>Projects</Button>
         </Link>
-        <Link href="/about" passHref>
+        <Link href="/contact" passHref>
           <Button>Contact</Button>
         </Link>
       </div>

@@ -1,7 +1,6 @@
-import dynamic from "next/dynamic";
 import { Toaster } from "react-hot-toast";
+
 import Footer from "./footer";
-// const Header = dynamic(() => import("./header"));
 import Header from "./header";
 
 export default function Layout({ children }) {

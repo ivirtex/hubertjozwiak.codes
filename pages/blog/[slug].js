@@ -1,16 +1,13 @@
 import fs from "fs";
+import path from "path";
+
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import Head from "next/head";
 import Link from "next/link";
-import path from "path";
-import Card from "../../components/card";
 
-// const components = {
-//   SyntaxHighlighter,
-// };
-// const data = { docco };
+import Card from "../../components/card";
 
 export default function PostPage({
   frontMatter: { title, date, cover_image },

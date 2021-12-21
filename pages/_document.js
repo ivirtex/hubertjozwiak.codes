@@ -9,21 +9,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>
-          {
-            //! Not working until system theme is fixed
-            /* <meta
-            name="theme-color"
-            content="FFFFFFF"
-            media="(prefers-color-scheme: light)"
-          />
-          <meta
-            name="theme-color"
-            content="#000000"
-            media="(prefers-color-scheme: dark)"
-          ></meta> */
-          }
-        </Head>
+        <Head></Head>
         <body>
           <Main />
           <NextScript />

@@ -1,7 +1,9 @@
 import fs from "fs";
+import path from "path";
+
 import matter from "gray-matter";
 import Head from "next/head";
-import path from "path";
+
 import Post from "../../components/post";
 import { sortByDate } from "../../utils/sortByDate";
 
