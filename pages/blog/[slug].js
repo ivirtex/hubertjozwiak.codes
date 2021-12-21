@@ -26,7 +26,7 @@ export default function PostPage({
       </Link>
       <div className="font-bold text-3xl pb-4">{title}</div>
       <div className="text-gray-600 dark:text-gray-200">{date}</div>
-      <article className="prose dark:prose-dark prose-sm sm:prose lg:prose-lg xl:prose-xl py-4">
+      <article className="prose prose-invert py-4">
         <MDXRemote {...mdxSource} />
       </article>
     </div>
