@@ -8,12 +8,16 @@ import { IoCopy } from "react-icons/io5";
 import Card from "../components/card";
 
 export default function Contact() {
-  let handleCopy = () => {
+  let handleCopyMail = () => {
     splitbee.track("contact", { type: "mail" });
     copy("hubertjozwiak@hubertjozwiak.codes");
     toast.success("Email copied to clipboard!", {
       style: { background: "#0a0f18", color: "#fff" },
     });
+  };
+
+  let handleCopyDiscord = () => {
+    splitbee.track("contact", { type: "discord" });
   };
 
   return (
@@ -26,14 +30,16 @@ export default function Contact() {
       <address>
         <a
           href="https://discordapp.com/users/922104761120084039"
-          onClick={() => splitbee.track("contact", { type: "mail" })}
+          onClick={handleCopyDiscord}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <Card className="flex flex-row items-center">
             <BsDiscord size={25} />
             <span className="pl-4">Discord</span>
           </Card>
         </a>
-        <button className="w-full" onClick={handleCopy}>
+        <button className="w-full" onClick={handleCopyMail}>
           <Card className="flex flex-row items-center">
             <BsEnvelopeFill size={25} />
             <span className="pl-4">Email</span>
