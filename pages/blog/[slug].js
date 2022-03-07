@@ -8,6 +8,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import Card from "../../components/card";
+import Layout from "../../components/layout";
 
 export default function PostPage({
   frontMatter: { title, date, cover_image },
@@ -15,21 +16,23 @@ export default function PostPage({
   mdxSource,
 }) {
   return (
-    <div className="max-w-3xl m-auto">
-      <Head>
-        <title>{title}</title>
-      </Head>
-      <Link href="/blog" passHref>
-        <button className="w-max">
-          <Card>Go back</Card>
-        </button>
-      </Link>
-      <div className="font-bold text-3xl pb-4">{title}</div>
-      <div className="text-gray-600 dark:text-gray-200">{date}</div>
-      <article className="prose prose-invert py-4">
-        <MDXRemote {...mdxSource} />
-      </article>
-    </div>
+    <Layout>
+      <div className="m-auto max-w-3xl">
+        <Head>
+          <title>{title}</title>
+        </Head>
+        <Link href="/blog" passHref>
+          <button className="w-max">
+            <Card>Go back</Card>
+          </button>
+        </Link>
+        <div className="pb-4 text-3xl font-bold">{title}</div>
+        <div className="text-gray-600 dark:text-gray-200">{date}</div>
+        <article className="prose prose-invert py-4">
+          <MDXRemote {...mdxSource} />
+        </article>
+      </div>
+    </Layout>
   );
 }
 
