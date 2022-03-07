@@ -6,12 +6,12 @@ import Emoji from "../components/emoji";
 
 export default function Home() {
   return (
-    <div className="max-w-2xl m-auto">
+    <div className="m-auto max-w-2xl">
       <Head>
         <title>Hubert Jóźwiak</title>
         <meta name="description" content="portfolio of software engineer" />
       </Head>
-      <div className="font-bold text-3xl">
+      <div className="text-3xl font-bold">
         Hi, I&apos;m Hubert! <Emoji symbol="👋" label="waving hand" />
       </div>
       <div className="my-4 text-lg">
