@@ -1,3 +1,4 @@
+// @ts-check
 import splitbee from "@splitbee/web";
 import copy from "copy-to-clipboard";
 import Head from "next/head";
@@ -10,7 +11,7 @@ import Card from "../components/card";
 export default function Contact() {
   let handleCopyMail = () => {
     splitbee.track("contact", { type: "mail" });
-    copy("hubertjozwiak@hubertjozwiak.codes");
+    copy("ivirtex@ivirtex.dev");
     toast.success("Email copied to clipboard!", {
       style: { background: "#0a0f18", color: "#fff" },
     });
@@ -21,7 +22,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="max-w-2xl m-auto">
+    <div className="m-auto max-w-2xl">
       <Head>
         <title>Contact</title>
       </Head>

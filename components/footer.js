@@ -1,8 +1,9 @@
+// @ts-check
 import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="p-4 font-normal text-sm bg-gray-950 w-full ">
+    <footer className="w-full bg-gray-950 p-4 text-sm font-normal ">
       <div className="flex">
         <p className="mx-auto">
           Copyright © 2021 Hubert Jóźwiak. All rights reserved.

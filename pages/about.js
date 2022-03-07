@@ -1,13 +1,14 @@
 import Head from "next/head";
 import Link from "next/link";
 
+// @ts-check
 export default function Contact() {
   const swiftUI = "https://developer.apple.com/xcode/swiftui/";
   const flutter = "https://flutter.dev/";
   const github = "https://github.com/ivirtex";
 
   return (
-    <div className="max-w-2xl m-auto">
+    <div className="m-auto max-w-2xl">
       <Head>
         <title>About me</title>
       </Head>

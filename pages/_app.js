@@ -1,3 +1,4 @@
+// @ts-check
 import { useEffect } from "react";
 
 import "../styles/globals.css";

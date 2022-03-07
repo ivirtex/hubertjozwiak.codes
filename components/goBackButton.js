@@ -1,3 +1,4 @@
+// @ts-check
 import { useRouter } from "next/router";
 
 import Card from "../components/card";
