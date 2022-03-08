@@ -10,7 +10,7 @@ export default function Layout({ children }) {
       <Toaster />
       <Header />
       <main className="flex-grow py-40 px-4 sm:py-32">{children}</main>
-      <Footer />
+      <Footer className="bg-gray-950" />
     </div>
   );
 }

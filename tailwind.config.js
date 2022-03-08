@@ -15,8 +15,14 @@ module.exports = {
           950: "#0e1421",
           970: "#0c111c",
         },
+        neutral: {
+          950: "#101010",
+        },
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("tailwindcss-font-inter"),
+  ],
 };

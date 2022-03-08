@@ -9,7 +9,7 @@ export default function Header() {
       <div className="flex flex-row p-4">
         <Link href="/" passHref>
           <button className="text-2xl font-semibold hover:text-zinc-400">
-            ivirtex
+            ivirtex.dev
           </button>
         </Link>
         <div className="grow"></div>

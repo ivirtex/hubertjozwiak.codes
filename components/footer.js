@@ -1,11 +1,11 @@
 // @ts-check
 import { FaGithub } from "react-icons/fa";
 
-export default function Footer() {
+export default function Footer({ className = "" }) {
   return (
-    <footer className="w-full bg-gray-950 p-4 text-sm font-normal ">
+    <footer className={`${className} w-full p-4 font-normal text-sm`}>
       <div className="flex">
-        <p className="mx-auto">
+        <p className="mx-auto px-4">
           Copyright © 2021 Hubert Jóźwiak. All rights reserved.
         </p>
         <div className="hover:opacity-75">

@@ -28,7 +28,7 @@ export default function Contact() {
         <Head>
           <title>Contact</title>
         </Head>
-        <div className="text-3xl font-bold">Contact</div>
+        <div className="font-bold text-3xl">Contact</div>
         <div className="py-4 text-lg">Reach out to me:</div>
         <address>
           <a
@@ -37,13 +37,13 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Card className="flex flex-row items-center">
+            <Card className="flex flex-row items-center bg-gray-950 hover:bg-gray-970">
               <BsDiscord size={25} />
               <span className="pl-4">Discord</span>
             </Card>
           </a>
           <button className="w-full" onClick={handleCopyMail}>
-            <Card className="flex flex-row items-center">
+            <Card className="flex flex-row items-center bg-gray-950 hover:bg-gray-970">
               <BsEnvelopeFill size={25} />
               <span className="pl-4">Email</span>
               <IoCopy size={25} className="ml-auto" />

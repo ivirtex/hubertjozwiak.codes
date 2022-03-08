@@ -1,3 +1,4 @@
+// @ts-check
 import fs from "fs";
 import path from "path";
 
@@ -26,7 +27,7 @@ export default function PostPage({
             <Card>Go back</Card>
           </button>
         </Link>
-        <div className="pb-4 text-3xl font-bold">{title}</div>
+        <div className="pb-4 font-bold text-3xl">{title}</div>
         <div className="text-gray-600 dark:text-gray-200">{date}</div>
         <article className="prose prose-invert py-4">
           <MDXRemote {...mdxSource} />
