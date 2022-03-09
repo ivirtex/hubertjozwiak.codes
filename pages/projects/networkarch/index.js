@@ -1,6 +1,5 @@
 // @ts-check
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import { SiFlutter, SiDart } from "react-icons/si";
 
@@ -44,7 +43,7 @@ export default function NetworkArch() {
       <div className="m-auto max-w-3xl flex-grow py-40 px-4 font-inter">
         <div className="flex flex-col md:flex-row-reverse ">
           <div className="py-4 px-10">
-            <Image src={appLogo} alt="App logo" placeholder="blur" />
+            <img src={appLogo} alt="App logo" placeholder="blur" />
           </div>
           <div className="m-auto flex flex-col items-center justify-center md:items-start md:justify-start">
             <div className="flex flex-row">
