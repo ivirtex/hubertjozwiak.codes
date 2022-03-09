@@ -1,5 +1,6 @@
 // @ts-check
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import { SiFlutter, SiDart } from "react-icons/si";
 
@@ -17,7 +18,7 @@ export default function NetworkArch() {
         <link rel="shortcut icon" href="/public/networkarch/favicon.ico" />
       </Head>
       <nav className="fixed inset-x-0 top-0 z-50 backdrop-blur-lg">
-        <div className="flex flex-col items-center space-y-1 p-4 sm:flex-row">
+        <div className="flex flex-col items-center space-y-1 p-4 sm:flex-row sm:space-y-0">
           <Link href="/" passHref>
             <button className="text-2xl font-semibold hover:text-zinc-400">
               ivirtex.dev
@@ -43,7 +44,13 @@ export default function NetworkArch() {
       <div className="m-auto max-w-3xl flex-grow py-40 px-4 font-inter">
         <div className="flex flex-col md:flex-row-reverse ">
           <div className="py-4 px-10">
-            <img src={appLogo} alt="App logo" placeholder="blur" />
+            <Image
+              // @ts-ignore
+              unoptimized
+              src={appLogo}
+              alt="App logo"
+              placeholder="blur"
+            />
           </div>
           <div className="m-auto flex flex-col items-center justify-center md:items-start md:justify-start">
             <div className="flex flex-row">

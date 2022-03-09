@@ -24,4 +24,8 @@ module.exports = {
 
     return config;
   },
+
+  images: {
+    loader: "custom",
+  },
 };
