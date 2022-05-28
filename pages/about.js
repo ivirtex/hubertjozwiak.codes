@@ -15,10 +15,12 @@ export default function About() {
         <Head>
           <title>About me</title>
         </Head>
-        <div className="text-3xl font-bold">About me</div>
+
+        <div className="font-bold text-3xl">About me</div>
+
         <div className="py-4 text-lg">
           As you probably saw on the main page, my name is Hubert, but people on
-          the Internet call me <b>ivirtex</b>.<br /> I am 18 years old software
+          the Internet call me <b>ivirtex</b>. I am 18 years old software
           developer from Poland. <br /> I mostly work on mobile apps using{" "}
           <a href={swiftUI} target="_blank" rel="noreferrer" className="link">
             SwiftUI
@@ -29,13 +31,14 @@ export default function About() {
           </a>
           , but I am also interested in reverse engineering and graphic, UI, UX
           design.
-          <br />I love open-source software and I am always looking for new
-          projects to contribute to. Helping others with their programming
-          problems brings me also a lot of joy and fun!
+          <br />
+          I love open-source software and I am always looking for new projects
+          to contribute to. Helping others with their programming problems
+          brings me also a lot of joy and fun!
           <br />
           This website was originally created to host ToS and privacy policies
-          for my apps, but I decided to make it a little more personal. <br />{" "}
-          Feel free to reach out to me on{" "}
+          for my apps, but I decided to make it a little more personal.
+          <br /> Feel free to reach out to me on{" "}
           <Link href="/contact" passHref>
             <a className="link">/contact</a>
           </Link>{" "}

@@ -8,7 +8,7 @@ export default function Header() {
     <nav className="fixed inset-x-0 top-0 z-50 bg-gray-950 bg-opacity-75 backdrop-blur">
       <div className="flex flex-row p-4">
         <Link href="/" passHref>
-          <button className="text-2xl font-semibold hover:text-zinc-400">
+          <button className="font-semibold text-2xl hover:text-zinc-400">
             ivirtex.dev
           </button>
         </Link>

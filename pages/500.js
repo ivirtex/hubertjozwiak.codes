@@ -7,7 +7,7 @@ export default function Custom500() {
     <Layout>
       <div className="mx-auto max-w-2xl flex-col">
         <GoBackButton />
-        <div className="text-3xl font-bold ">
+        <div className="font-bold text-3xl ">
           500 - Server-side error occurred
         </div>
       </div>

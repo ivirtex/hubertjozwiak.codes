@@ -7,7 +7,7 @@ export default function Custom404() {
     <Layout>
       <div className="mx-auto max-w-2xl flex-col">
         <GoBackButton />
-        <div className="text-3xl font-bold ">404 - Page Not Found</div>
+        <div className="font-bold text-3xl ">404 - Page Not Found</div>
       </div>
     </Layout>
   );

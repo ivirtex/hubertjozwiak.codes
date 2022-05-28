@@ -14,7 +14,7 @@ export default function Home() {
           <title>Hubert Jóźwiak</title>
           <meta name="description" content="portfolio of software engineer" />
         </Head>
-        <div className="text-3xl font-bold">
+        <div className="font-bold text-3xl">
           Hi, I&apos;m Hubert! <Emoji symbol="👋" label="waving hand" />
         </div>
         <div className="my-4 text-lg">
