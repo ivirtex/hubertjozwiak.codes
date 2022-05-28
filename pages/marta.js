@@ -7,7 +7,7 @@ import Letter from "../public/marta/letter.svg";
 export default function Marta() {
   return (
     <Layout>
-      <div className="m-auto w-max">
+      <div className="mx-auto w-max">
         <Head>
           <title>luv u bish!!</title>
         </Head>

@@ -5,15 +5,14 @@ import Button from "./button";
 
 export default function Header() {
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 bg-gray-950 bg-opacity-75 backdrop-blur">
-      <div className="flex flex-row p-4">
+    <nav className="fixed inset-x-0 top-0 z-50 flex-grow bg-opacity-75 p-4 backdrop-blur">
+      <div className="mx-auto flex max-w-3xl justify-between space-x-4">
         <Link href="/" passHref>
-          <button className="font-semibold text-2xl hover:text-zinc-400">
+          <button className="font-semibold text-xl hover:text-zinc-700 sm:text-2xl">
             ivirtex.dev
           </button>
         </Link>
-        <div className="grow"></div>
-        <div className="grid grid-cols-2 gap-2 sm:flex">
+        <div className="grid grid-cols-2 gap-1 text-sm sm:flex">
           <Link href="/about" passHref>
             <Button>About</Button>
           </Link>

@@ -5,23 +5,26 @@ import Link from "next/link";
 import Card from "../components/card";
 import Emoji from "../components/emoji";
 import Layout from "../components/layout";
+import Title from "../components/title";
 
 export default function Home() {
   return (
     <Layout>
-      <div className="m-auto max-w-2xl">
+      <div className="mx-auto max-w-3xl">
         <Head>
           <title>Hubert Jóźwiak</title>
           <meta name="description" content="portfolio of software engineer" />
         </Head>
-        <div className="font-bold text-3xl">
+
+        <Title>
           Hi, I&apos;m Hubert! <Emoji symbol="👋" label="waving hand" />
-        </div>
-        <div className="my-4 text-lg">
+        </Title>
+
+        <div className="mb-4 text-xl sm:text-2xl">
           <p>Welcome to my website!</p>
           <p>
-            I am interested in software engineering, especially in mobile
-            applications development.
+            I&apos;m software developer interested in software engineering and
+            mobile applications development.
           </p>
         </div>
 

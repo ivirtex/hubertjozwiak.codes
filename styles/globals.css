@@ -4,8 +4,8 @@
 
 @layer components {
   .link {
-    @apply font-bold text-white underline underline-offset-1 
-    decoration-sky-400 hover:decoration-pink-500 duration-150;
+    @apply font-bold underline decoration-sky-400 
+    underline-offset-1 duration-150 hover:decoration-pink-500;
   }
 }
 

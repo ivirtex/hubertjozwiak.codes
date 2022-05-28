@@ -1,14 +1,12 @@
 // @ts-check
 import { FaGithub } from "react-icons/fa";
 
-export default function Footer({ className = "" }) {
+export default function Footer() {
   return (
-    <footer className={`${className} w-full p-4 font-normal text-sm`}>
-      <div className="flex">
-        <p className="mx-auto px-4">
-          Copyright © 2021 Hubert Jóźwiak. All rights reserved.
-        </p>
-        <div className="hover:opacity-75">
+    <footer className="p-4 text-sm ">
+      <div className="mx-auto flex max-w-3xl justify-between ">
+        Copyright © 2022 Hubert Jóźwiak. All rights reserved.
+        <div className="ml-4 hover:opacity-75">
           <a
             href="https://github.com/ivirtex"
             target="_blank"
