@@ -2,10 +2,11 @@
 import Link from "next/link";
 
 import Button from "./button";
+import ThemeChanger from "./themeChanger";
 
 export default function Header() {
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-opacity-30 backdrop-blur-lg backdrop-filter">
+    <nav className="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-opacity-30 backdrop-blur-lg backdrop-filter dark:border-gray-700">
       <div className="mx-auto flex max-w-3xl justify-between space-x-4 p-4">
         <Link href="/" passHref>
           <button className="font-semibold text-xl hover:text-zinc-700 sm:text-2xl">
@@ -26,6 +27,7 @@ export default function Header() {
             <Button>Contact</Button>
           </Link>
         </div>
+        <ThemeChanger />
       </div>
     </nav>
   );
