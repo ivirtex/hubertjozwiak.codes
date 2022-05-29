@@ -9,6 +9,40 @@
   }
 }
 
+.circle-obj {
+  background: radial-gradient(
+    closest-side,
+    rgb(18, 185, 252),
+    rgba(0, 0, 0, 0)
+  );
+  animation: traverse-up-left 10s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+.circle-obj2 {
+  background: radial-gradient(closest-side, rgb(0, 102, 255), rgba(0, 0, 0, 0));
+  animation: traverse-up-right 12s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+@keyframes traverse-up-left {
+  0% {
+  }
+
+  100% {
+    transform: translateY(-200px) translateX(-350px) rotate(180deg);
+  }
+}
+
+@keyframes traverse-up-right {
+  0% {
+  }
+
+  100% {
+    transform: translateY(-300px) translateX(300px) rotate(360deg);
+  }
+}
+
 html,
 body {
   padding: 0;

@@ -5,8 +5,8 @@ import Button from "./button";
 
 export default function Header() {
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 flex-grow bg-opacity-75 p-4 backdrop-blur">
-      <div className="mx-auto flex max-w-3xl justify-between space-x-4">
+    <nav className="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-opacity-30 backdrop-blur-lg backdrop-filter">
+      <div className="mx-auto flex max-w-3xl justify-between space-x-4 p-4">
         <Link href="/" passHref>
           <button className="font-semibold text-xl hover:text-zinc-700 sm:text-2xl">
             ivirtex.dev

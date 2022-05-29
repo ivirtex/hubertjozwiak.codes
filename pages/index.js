@@ -10,7 +10,7 @@ import Title from "../components/title";
 export default function Home() {
   return (
     <Layout>
-      <div className="mx-auto max-w-3xl">
+      <div className="">
         <Head>
           <title>Hubert Jóźwiak</title>
           <meta name="description" content="portfolio of software engineer" />
