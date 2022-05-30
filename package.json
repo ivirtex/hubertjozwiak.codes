@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.4",
     "@splitbee/web": "^0.3.0",
     "@tailwindcss/typography": "^0.5.2",
     "copy-to-clipboard": "^3.3.1",
