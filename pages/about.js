@@ -18,7 +18,7 @@ export default function About() {
 
       <Title>About me</Title>
 
-      <div className="py-4 text-lg">
+      <div className="text-lg">
         <p>
           As you probably saw on the main page, my name is Hubert, but people on
           the Internet call me <b>ivirtex</b>. I am 18 years old software

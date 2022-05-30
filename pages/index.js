@@ -34,11 +34,11 @@ export default function Home() {
           <Card>About</Card>
         </button>
       </Link>
-      <Link href="/blog" passHref>
+      {/* <Link href="/blog" passHref>
         <button className="w-full">
           <Card>Blog</Card>
         </button>
-      </Link>
+      </Link> */}
       <Link href="/projects" passHref>
         <button className="w-full">
           <Card>Projects</Card>

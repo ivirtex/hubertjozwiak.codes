@@ -29,7 +29,7 @@ export default function Contact() {
         <title>Contact</title>
       </Head>
       <Title>Contact</Title>
-      <div className="py-4 text-lg">Reach out to me:</div>
+      <div className="pb-4 text-lg">Reach out to me:</div>
       <address>
         <a
           href="https://discordapp.com/users/922104761120084039"

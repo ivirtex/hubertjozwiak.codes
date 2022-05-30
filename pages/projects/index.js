@@ -16,7 +16,7 @@ export default function Projects() {
       <Link href="/projects/networkarch" passHref>
         <button className="w-full">
           <Card>
-            <p className="font-medium text-lg">NetworkArch</p>
+            <p className="text-lg font-medium">NetworkArch</p>
             <p className="font-normal text-base">
               Flutter app for wireless networks diagnostics
             </p>
