@@ -1,21 +1,27 @@
 // @ts-check
 import splitbee from "@splitbee/web";
 import copy from "copy-to-clipboard";
+import { useTheme } from "next-themes";
 import Head from "next/head";
 import { toast } from "react-hot-toast";
 import { BsDiscord, BsEnvelopeFill } from "react-icons/bs";
 import { IoCopy } from "react-icons/io5";
 
-import Card from "../components/card";
-import Layout from "../components/layout";
-import Title from "../components/title";
+import Card from "../components/Card";
+import Layout from "../components/Layout";
+import Title from "../components/Title";
 
 export default function Contact() {
+  const { theme } = useTheme();
+
   let handleCopyMail = () => {
     splitbee.track("contact", { type: "mail" });
     copy("ivirtex@ivirtex.dev");
     toast.success("Email copied to clipboard!", {
-      style: { background: "#0a0f18", color: "#fff" },
+      style:
+        theme === "dark"
+          ? { background: "#0a0f18", color: "#fff" }
+          : { background: "#fff", color: "#000" },
     });
   };
 

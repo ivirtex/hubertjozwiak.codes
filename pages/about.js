@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import Layout from "../components/layout";
-import Title from "../components/title";
+import Layout from "../components/Layout";
+import Title from "../components/Title";
 
 // @ts-check
 export default function About() {

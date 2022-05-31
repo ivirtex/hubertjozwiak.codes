@@ -2,9 +2,9 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import Card from "../../components/card";
-import Layout from "../../components/layout";
-import Title from "../../components/title";
+import Card from "../../components/Card";
+import Layout from "../../components/Layout";
+import Title from "../../components/Title";
 
 export default function Projects() {
   return (

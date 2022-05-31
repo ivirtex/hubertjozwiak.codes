@@ -2,11 +2,11 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import Card from "../components/card";
-import ColorCircles from "../components/colorCircles";
-import Emoji from "../components/emoji";
-import Layout from "../components/layout";
-import Title from "../components/title";
+import Card from "../components/Card";
+import ColorCircles from "../components/ColorCircles";
+import Emoji from "../components/Emoji";
+import Layout from "../components/Layout";
+import Title from "../components/Title";
 
 export default function Home() {
   return (

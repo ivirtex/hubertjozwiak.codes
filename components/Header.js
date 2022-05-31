@@ -5,8 +5,8 @@ import { Dialog } from "@headlessui/react";
 import Link from "next/link";
 import { MdMenu, MdClose } from "react-icons/md";
 
-import HeaderButton from "./headerButton";
-import ThemeChanger from "./themeChanger";
+import HeaderButton from "./HeaderButton";
+import ThemeChanger from "./ThemeChanger";
 
 export default function Header() {
   let [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ export default function Header() {
     <nav className="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-opacity-30 backdrop-blur-lg backdrop-filter dark:border-gray-700">
       <div className="mx-auto flex max-w-3xl items-center justify-between space-x-4 p-4">
         <Link href="/" passHref>
-          <button className="h-min font-semibold text-2xl hover:text-zinc-600 dark:hover:text-zinc-300">
+          <button className="h-min text-2xl font-semibold hover:text-zinc-600 dark:hover:text-zinc-300">
             ivirtex.dev
           </button>
         </Link>
@@ -54,7 +54,7 @@ export default function Header() {
             onClick={() => setIsOpen(false)}
           />
 
-          <div className="fixed top-4 right-4  rounded-lg bg-zinc-100 p-6 font-semibold text-gray-900 shadow-lg dark:bg-gray-900 dark:text-gray-400">
+          <div className="fixed top-4 right-4 rounded-lg bg-zinc-100 p-6 font-semibold text-gray-900 shadow-lg dark:bg-gray-900 dark:text-zinc-300">
             <button
               onClick={() => setIsOpen(false)}
               className="absolute top-3 right-3 flex h-8 w-8 items-center justify-center text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"

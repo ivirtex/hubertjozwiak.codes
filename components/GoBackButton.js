@@ -1,7 +1,7 @@
 // @ts-check
 import { useRouter } from "next/router";
 
-import Card from "../components/card";
+import Card from "../components/Card";
 
 export default function GoBackButton() {
   const router = useRouter();

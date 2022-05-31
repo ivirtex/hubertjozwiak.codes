@@ -1,6 +1,6 @@
 // @ts-check
-import GoBackButton from "../components/goBackButton";
-import Layout from "../components/layout";
+import GoBackButton from "../components/GoBackButton";
+import Layout from "../components/Layout";
 
 export default function Custom404() {
   return (

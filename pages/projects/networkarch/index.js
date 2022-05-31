@@ -4,9 +4,9 @@ import Head from "next/head";
 import Link from "next/link";
 import { SiFlutter, SiDart } from "react-icons/si";
 
-import Card from "../../../components/card";
-import Footer from "../../../components/footer";
-import HeaderButton from "../../../components/headerButton";
+import Card from "../../../components/Card";
+import Footer from "../../../components/Footer";
+import HeaderButton from "../../../components/HeaderButton";
 
 export default function NetworkArch() {
   return (
@@ -28,17 +28,17 @@ export default function NetworkArch() {
               href="https://github.com/ivirtex/networkarch-flutter"
               rel="noreferrer"
             >
-              <HeaderButton className="hover:bg-neutral-800">
+              <HeaderButton className="hover:bg-neutral-800 dark:hover:bg-neutral-800">
                 GitHub
               </HeaderButton>
             </a>
             <Link href="/contact" passHref>
-              <HeaderButton className="hover:bg-neutral-800">
+              <HeaderButton className="hover:bg-neutral-800 dark:hover:bg-neutral-800">
                 Contact
               </HeaderButton>
             </Link>
             <Link href="networkarch/privacyPolicy" passHref>
-              <HeaderButton className="hover:bg-neutral-800">
+              <HeaderButton className="hover:bg-neutral-800 dark:hover:bg-neutral-800">
                 Privacy policy
               </HeaderButton>
             </Link>
@@ -68,11 +68,11 @@ export default function NetworkArch() {
               network diagnostics
             </div>
             <div className="flex flex-row space-x-2">
-              <Card className="flex w-min items-center bg-neutral-900 bg-opacity-100 hover:bg-neutral-800">
+              <Card className="flex w-min items-center bg-neutral-800 bg-opacity-100  dark:bg-neutral-800">
                 <SiFlutter size={20} />
                 <span className="pl-2">Flutter</span>
               </Card>
-              <Card className="flex w-min items-center bg-neutral-900 bg-opacity-100 hover:bg-neutral-800">
+              <Card className="flex w-min items-center bg-neutral-800 bg-opacity-100  dark:bg-neutral-800">
                 <SiDart size={20} />
                 <span className="pl-2">Dart</span>
               </Card>

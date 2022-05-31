@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import Hedgehog from "../public/marta/hedgehog.svg";
 import Letter from "../public/marta/letter.svg";
 
