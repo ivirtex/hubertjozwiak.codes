@@ -1,28 +1,45 @@
 // @ts-check
 import Head from "next/head";
-import Link from "next/link";
 
-import Card from "../../components/Card";
 import Layout from "../../components/Layout";
+import ProjectTemplate from "../../components/ProjectTemplate";
 import Title from "../../components/Title";
+// @ts-ignore
+import networkArchLogo from "../../public/networkarch/app_icon.png";
 
 export default function Projects() {
+  const networkArchDesc = (
+    <>
+      Flutter Android/iOS app for wireless network diagnostics built with
+      layered, clean architecture and Bloc design pattern. <br /> <br />
+      Features tools like: Wi-Fi/Cellular connection details, ping, Wake on LAN,
+      LAN scanner, IP geolocation, Whois, DNS Lookup.
+    </>
+  );
+
   return (
     <Layout>
       <Head>
         <title>Projects</title>
       </Head>
       <Title>My projects</Title>
-      <Link href="/projects/networkarch" passHref>
-        <button className="w-full">
-          <Card>
-            <p className="text-lg font-medium">NetworkArch</p>
-            <p className="font-normal text-base">
-              Flutter app for wireless networks diagnostics
-            </p>
-          </Card>
-        </button>
-      </Link>
+      <div className="w-full">
+        <ProjectTemplate
+          logoSrc={networkArchLogo}
+          title="NetworkArch"
+          description={networkArchDesc}
+          website="/projects/networkarch"
+          code="https://github.com/ivirtex/networkarch-flutter"
+        />
+        {/* <div className="my-8 mx-4 h-0.5 rounded-full bg-zinc-300" />
+        <ProjectTemplate
+          logoSrc={networkArchLogo}
+          title="NetworkArch"
+          description={networkArchDesc}
+          website="/projects/networkarch"
+          code="https://github.com/ivirtex/networkarch-flutter"
+        /> */}
+      </div>
     </Layout>
   );
 }

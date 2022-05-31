@@ -12,10 +12,10 @@ export default function Header() {
   let [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-opacity-30 backdrop-blur-lg backdrop-filter dark:border-gray-700">
+    <nav className="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-opacity-30 backdrop-blur-lg backdrop-filter firefox:bg-opacity-90 dark:border-gray-700">
       <div className="mx-auto flex max-w-3xl items-center justify-between space-x-4 p-4">
         <Link href="/" passHref>
-          <button className="h-min text-2xl font-semibold hover:text-zinc-600 dark:hover:text-zinc-300">
+          <button className="h-min font-semibold text-2xl hover:text-zinc-600 dark:hover:text-zinc-300">
             ivirtex.dev
           </button>
         </Link>
@@ -26,7 +26,7 @@ export default function Header() {
           <MdMenu size={25} />
         </button>
 
-        <div className="hidden font-light sm:flex">
+        <div className="hidden space-x-2 font-light sm:flex">
           <Link href="/about" passHref>
             <HeaderButton>About</HeaderButton>
           </Link>
@@ -42,6 +42,7 @@ export default function Header() {
         </div>
 
         <ThemeChanger className="hidden sm:flex" />
+
         <Dialog
           open={isOpen}
           onClose={() => setIsOpen(false)}
@@ -54,7 +55,7 @@ export default function Header() {
             onClick={() => setIsOpen(false)}
           />
 
-          <div className="fixed top-4 right-4 rounded-lg bg-zinc-100 p-6 font-semibold text-gray-900 shadow-lg dark:bg-gray-900 dark:text-zinc-300">
+          <div className="fixed top-4 right-4 rounded-lg bg-zinc-100/70 p-6 font-semibold text-gray-900 shadow-lg backdrop-blur-md dark:bg-gray-900/70 dark:text-zinc-300 dark:backdrop-blur-md">
             <button
               onClick={() => setIsOpen(false)}
               className="absolute top-3 right-3 flex h-8 w-8 items-center justify-center text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"

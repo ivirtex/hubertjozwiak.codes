@@ -7,7 +7,7 @@ import { toast } from "react-hot-toast";
 import { BsDiscord, BsEnvelopeFill } from "react-icons/bs";
 import { IoCopy } from "react-icons/io5";
 
-import Card from "../components/Card";
+import InteractiveCard from "../components/InteractiveCard";
 import Layout from "../components/Layout";
 import Title from "../components/Title";
 
@@ -20,8 +20,8 @@ export default function Contact() {
     toast.success("Email copied to clipboard!", {
       style:
         theme === "dark"
-          ? { background: "#0a0f18", color: "#fff" }
-          : { background: "#fff", color: "#000" },
+          ? { background: "#1d2536", color: "#fff" }
+          : { background: "#f0f0f0", color: "#000" },
     });
   };
 
@@ -43,17 +43,17 @@ export default function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Card className="flex flex-row items-center ">
+          <InteractiveCard className="flex flex-row items-center">
             <BsDiscord size={25} />
             <span className="pl-4">Discord</span>
-          </Card>
+          </InteractiveCard>
         </a>
         <button className="w-full" onClick={handleCopyMail}>
-          <Card className="flex flex-row items-center">
+          <InteractiveCard className="flex flex-row items-center">
             <BsEnvelopeFill size={25} />
             <span className="pl-4">Email</span>
             <IoCopy size={25} className="ml-auto" />
-          </Card>
+          </InteractiveCard>
         </button>
       </address>
     </Layout>

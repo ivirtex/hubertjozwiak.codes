@@ -2,19 +2,17 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import Card from "../components/Card";
-import ColorCircles from "../components/ColorCircles";
 import Emoji from "../components/Emoji";
+import InteractiveCard from "../components/InteractiveCard";
 import Layout from "../components/Layout";
 import Title from "../components/Title";
 
 export default function Home() {
   return (
-    <Layout>
-      <ColorCircles />
+    <Layout showAnimatedBg>
       <Head>
         <title>Hubert Jóźwiak</title>
-        <meta name="description" content="portfolio of software engineer" />
+        <meta name="description" content="portfolio of software developer" />
       </Head>
 
       <Title>
@@ -31,7 +29,7 @@ export default function Home() {
 
       <Link href="/about" passHref>
         <button className="w-full">
-          <Card>About</Card>
+          <InteractiveCard>About</InteractiveCard>
         </button>
       </Link>
       {/* <Link href="/blog" passHref>
@@ -41,12 +39,12 @@ export default function Home() {
       </Link> */}
       <Link href="/projects" passHref>
         <button className="w-full">
-          <Card>Projects</Card>
+          <InteractiveCard>Projects</InteractiveCard>
         </button>
       </Link>
       <Link href="/contact" passHref>
         <button className="w-full">
-          <Card>Contact</Card>
+          <InteractiveCard>Contact</InteractiveCard>
         </button>
       </Link>
     </Layout>

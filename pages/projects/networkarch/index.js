@@ -1,12 +1,16 @@
 // @ts-check
-import ExportedImage from "next-image-export-optimizer";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import { SiFlutter, SiDart } from "react-icons/si";
 
-import Card from "../../../components/Card";
 import Footer from "../../../components/Footer";
 import HeaderButton from "../../../components/HeaderButton";
+import InteractiveCard from "../../../components/InteractiveCard";
+// @ts-ignore
+import networkArchLogo from "../../../public/networkarch/app_icon.png";
+// @ts-ignore
+import playStoreBadge from "../../../public/play_store_badge.png";
 
 export default function NetworkArch() {
   return (
@@ -48,11 +52,7 @@ export default function NetworkArch() {
       <div className="m-auto max-w-3xl flex-grow py-40 px-4 font-inter">
         <div className="flex flex-col md:flex-row-reverse">
           <div className="py-4 px-10">
-            <ExportedImage
-              src="public/networkarch/app_icon.png"
-              alt="App logo"
-              layout="fill"
-            />
+            <Image src={networkArchLogo} alt="App logo" />
           </div>
           <div className="m-auto flex flex-col items-center justify-center md:items-start md:justify-start">
             <div className="flex flex-row">
@@ -68,15 +68,16 @@ export default function NetworkArch() {
               network diagnostics
             </div>
             <div className="flex flex-row space-x-2">
-              <Card className="flex w-min items-center bg-neutral-800 bg-opacity-100  dark:bg-neutral-800">
+              <InteractiveCard className="flex w-min items-center bg-neutral-800 bg-opacity-100 dark:bg-neutral-800">
                 <SiFlutter size={20} />
                 <span className="pl-2">Flutter</span>
-              </Card>
-              <Card className="flex w-min items-center bg-neutral-800 bg-opacity-100  dark:bg-neutral-800">
+              </InteractiveCard>
+              <InteractiveCard className="flex w-min items-center bg-neutral-800 bg-opacity-100 dark:bg-neutral-800">
                 <SiDart size={20} />
                 <span className="pl-2">Dart</span>
-              </Card>
+              </InteractiveCard>
             </div>
+            <Image src={playStoreBadge} alt="Google Play badge" />
           </div>
         </div>
       </div>
