@@ -2,17 +2,16 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { SiFlutter, SiDart } from "react-icons/si";
 
 import Footer from "../../../components/Footer";
 import HeaderButton from "../../../components/HeaderButton";
-import InteractiveCard from "../../../components/InteractiveCard";
 // @ts-ignore
 import networkArchLogo from "../../../public/networkarch/app_icon.png";
 // @ts-ignore
 import playStoreBadge from "../../../public/play_store_badge.png";
 
 export default function NetworkArch() {
+  // TODO: Make this a seperate component
   return (
     <div className="flex min-h-screen flex-col bg-[#101010] text-zinc-200 duration-150 ease-in-out">
       <Head>
@@ -32,7 +31,7 @@ export default function NetworkArch() {
               href="https://github.com/ivirtex/networkarch-flutter"
               rel="noreferrer"
             >
-              <HeaderButton className="hover:bg-neutral-800 dark:hover:bg-neutral-800">
+              <HeaderButton className="hover:bg-neutral-800 dark:hover:bg-neutral-900">
                 GitHub
               </HeaderButton>
             </a>
@@ -50,8 +49,8 @@ export default function NetworkArch() {
         </div>
       </nav>
       <div className="m-auto max-w-3xl flex-grow py-40 px-4 font-inter">
-        <div className="flex flex-col md:flex-row-reverse">
-          <div className="py-4 px-10">
+        <div className="flex flex-col items-center md:flex-row-reverse">
+          <div className="max-w-sm py-4 px-10">
             <Image src={networkArchLogo} alt="App logo" />
           </div>
           <div className="m-auto flex flex-col items-center justify-center md:items-start md:justify-start">
@@ -67,17 +66,13 @@ export default function NetworkArch() {
               Open-source mobile app equipped with various useful utilities for
               network diagnostics
             </div>
-            <div className="flex flex-row space-x-2">
-              <InteractiveCard className="flex w-min items-center bg-neutral-800 bg-opacity-100 dark:bg-neutral-800">
-                <SiFlutter size={20} />
-                <span className="pl-2">Flutter</span>
-              </InteractiveCard>
-              <InteractiveCard className="flex w-min items-center bg-neutral-800 bg-opacity-100 dark:bg-neutral-800">
-                <SiDart size={20} />
-                <span className="pl-2">Dart</span>
-              </InteractiveCard>
-            </div>
-            <Image src={playStoreBadge} alt="Google Play badge" />
+
+            <a
+              className="max-w-xs"
+              href="https://play.google.com/store/apps/details?id=com.hubertjozwiak.networkarch"
+            >
+              <Image src={playStoreBadge} alt="Google Play badge" />
+            </a>
           </div>
         </div>
       </div>

@@ -27,26 +27,28 @@ export default function Home() {
         </p>
       </div>
 
-      <Link href="/about" passHref>
-        <button className="w-full">
-          <InteractiveCard>About</InteractiveCard>
-        </button>
-      </Link>
-      {/* <Link href="/blog" passHref>
+      <div className="space-y-3">
+        <Link href="/about" passHref>
+          <button className="w-full">
+            <InteractiveCard>About</InteractiveCard>
+          </button>
+        </Link>
+        {/* <Link href="/blog" passHref>
         <button className="w-full">
           <Card>Blog</Card>
         </button>
       </Link> */}
-      <Link href="/projects" passHref>
-        <button className="w-full">
-          <InteractiveCard>Projects</InteractiveCard>
-        </button>
-      </Link>
-      <Link href="/contact" passHref>
-        <button className="w-full">
-          <InteractiveCard>Contact</InteractiveCard>
-        </button>
-      </Link>
+        <Link href="/projects" passHref>
+          <button className="w-full">
+            <InteractiveCard>Projects</InteractiveCard>
+          </button>
+        </Link>
+        <Link href="/contact" passHref>
+          <button className="w-full">
+            <InteractiveCard>Contact</InteractiveCard>
+          </button>
+        </Link>
+      </div>
     </Layout>
   );
 }

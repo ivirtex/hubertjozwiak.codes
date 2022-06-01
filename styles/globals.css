@@ -7,6 +7,11 @@
     @apply font-bold underline decoration-sky-400 
     underline-offset-1 duration-150 hover:decoration-pink-500;
   }
+
+  .card {
+    @apply items-center rounded-lg bg-zinc-200 bg-opacity-60 p-4 text-left 
+    font-medium duration-150 ease-in-out text-lg dark:bg-gray-800 dark:bg-opacity-50;
+  }
 }
 
 .circle-obj {

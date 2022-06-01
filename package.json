@@ -21,6 +21,7 @@
     "react-dom": "18.1.0",
     "react-hot-toast": "^2.2.0",
     "react-icons": "^4.4.0",
+    "tailwind-merge": "^1.2.1",
     "tailwindcss-font-inter": "^3.0.1"
   },
   "devDependencies": {

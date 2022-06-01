@@ -1,6 +1,8 @@
 // @ts-check
 import Head from "next/head";
+// import { SiDart, SiFlutter } from "react-icons/si";
 
+// import Card from "../../components/Card";
 import Layout from "../../components/Layout";
 import ProjectTemplate from "../../components/ProjectTemplate";
 import Title from "../../components/Title";
@@ -23,6 +25,17 @@ export default function Projects() {
         <title>Projects</title>
       </Head>
       <Title>My projects</Title>
+      {/* TODO: fix padding in this */}
+      {/* <div className="flex space-x-2">
+        <Card className="flex w-min items-center">
+          <SiFlutter size={15} />
+          <span className="pl-2">Flutter</span>
+        </Card>
+        <Card className="flex w-min items-center">
+          <SiDart size={20} />
+          <span className="pl-2">Dart</span>
+        </Card>
+      </div> */}
       <div className="w-full">
         <ProjectTemplate
           logoSrc={networkArchLogo}
