@@ -36,7 +36,7 @@ export default function Contact() {
       </Head>
       <Title>Contact</Title>
       <div className="pb-4 text-lg">Reach out to me:</div>
-      <address>
+      <div className="space-y-3">
         <a
           href="https://discordapp.com/users/922104761120084039"
           onClick={handleCopyDiscord}
@@ -55,7 +55,7 @@ export default function Contact() {
             <IoCopy size={25} className="ml-auto" />
           </InteractiveCard>
         </button>
-      </address>
+      </div>
     </Layout>
   );
 }

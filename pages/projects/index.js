@@ -1,8 +1,6 @@
 // @ts-check
 import Head from "next/head";
-// import { SiDart, SiFlutter } from "react-icons/si";
 
-// import Card from "../../components/Card";
 import Layout from "../../components/Layout";
 import ProjectTemplate from "../../components/ProjectTemplate";
 import Title from "../../components/Title";
