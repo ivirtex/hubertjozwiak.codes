@@ -63,7 +63,7 @@ word-break: break-word !important;
   `;
 
   return (
-    <div className="flex min-h-screen flex-col  text-zinc-200 duration-150 ease-in-out">
+    <div className="flex min-h-screen flex-col text-zinc-200 duration-150 ease-in-out">
       <Head>
         <title>NetworkArch</title>
         <link rel="shortcut icon" href="/public/networkarch/favicon.ico" />
@@ -71,7 +71,7 @@ word-break: break-word !important;
       <nav className="fixed inset-x-0 top-0 z-50 backdrop-blur-lg">
         <div className="flex flex-col items-center space-y-1 p-4 sm:flex-row">
           <Link href="/" passHref>
-            <button className="text-2xl font-semibold text-black hover:text-neutral-700">
+            <button className="font-semibold text-black text-2xl hover:text-neutral-700">
               ivirtex.dev
             </button>
           </Link>

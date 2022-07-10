@@ -13,7 +13,7 @@ export default function Layout(props) {
       }  bg-zinc-100 text-zinc-900 duration-150 ease-in-out dark:bg-gray-900 dark:text-zinc-100`}
     >
       <Toaster />
-      <Header />
+      {props.customHeader ?? <Header />}
       <main className="relative mx-auto flex w-full max-w-3xl flex-grow flex-col px-4 pt-32 sm:pt-40">
         {props.showAnimatedBg && <ColorCircles />}
         <div className="z-10">{props.children}</div>

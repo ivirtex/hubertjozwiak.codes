@@ -21,13 +21,13 @@
     rgba(0, 0, 0, 0)
   );
   animation: traverse-up-left 10s ease-in-out infinite alternate;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .circle-obj2 {
   background: radial-gradient(closest-side, rgb(0, 102, 255), rgba(0, 0, 0, 0));
   animation: traverse-up-right 12s ease-in-out infinite alternate;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 @keyframes traverse-up-left {

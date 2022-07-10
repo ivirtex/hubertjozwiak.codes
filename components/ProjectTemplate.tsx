@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import InteractiveCard from "./InteractiveCard";
+
 export default function ProjectTemplate({
   logoSrc,
   title,
@@ -9,28 +11,28 @@ export default function ProjectTemplate({
   code,
 }) {
   return (
-    <div className="flex flex-col justify-between pb-4 sm:flex-row-reverse ">
-      <div className="max-w-xs pb-2 sm:basis-44 sm:py-4">
-        <Image alt={`${title} logo`} src={logoSrc} />
-      </div>
-      <div className="sm:basis-96">
-        <p className="pb-1 text-xl font-bold">{title}</p>
-        <p className="text-lg">{description}</p>
-        <div className="flex space-x-2 pt-8 ">
-          <Link href={website} passHref>
-            <button>
-              <p className="rounded-lg bg-zinc-200 bg-opacity-60 p-3 duration-150 ease-in-out hover:bg-zinc-300 dark:bg-gray-800 dark:bg-opacity-50 dark:hover:bg-gray-700">
-                View project
-              </p>
-            </button>
-          </Link>
-          <a href={code}>
-            <button>
-              <p className="rounded-lg bg-zinc-200 bg-opacity-60 p-3 duration-150 ease-in-out hover:bg-zinc-300 dark:bg-gray-800 dark:bg-opacity-50 dark:hover:bg-gray-700">
-                View code
-              </p>
-            </button>
-          </a>
+    <div className=" ">
+      <div className="flex h-min flex-col justify-between pb-4 sm:flex-row-reverse">
+        <div className="max-w-xs pb-2 sm:basis-56">
+          <Image alt={`${title} logo`} src={logoSrc} className="rounded-xl" />
+        </div>
+        <div className="h-max flex-col justify-between sm:basis-96">
+          <div>
+            <p className="pb-1 text-xl font-bold">{title}</p>
+            <p className="text-lg">{description}</p>
+          </div>
+          <div className="space-x-2 justify-self-end pt-2">
+            <Link href={website} passHref>
+              <button>
+                <InteractiveCard>View project</InteractiveCard>
+              </button>
+            </Link>
+            <a href={code}>
+              <button>
+                <InteractiveCard>View code</InteractiveCard>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>

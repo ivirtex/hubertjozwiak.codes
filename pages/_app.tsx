@@ -4,9 +4,10 @@ import { useEffect } from "react";
 import "../styles/globals.css";
 import splitbee from "@splitbee/web";
 import { ThemeProvider } from "next-themes";
+import { AppProps } from "next/app";
 import NextNProgress from "nextjs-progressbar";
 
-function App({ Component, pageProps }) {
+function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     splitbee.init();
   }, []);

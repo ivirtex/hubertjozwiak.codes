@@ -35,11 +35,6 @@ export default function Home() {
             <InteractiveCard>About</InteractiveCard>
           </button>
         </Link>
-        {/* <Link href="/blog" passHref>
-        <button className="w-full">
-          <Card>Blog</Card>
-        </button>
-      </Link> */}
         <Link href="/projects" passHref>
           <button className="w-full">
             <InteractiveCard>Projects</InteractiveCard>

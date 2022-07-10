@@ -1,4 +1,3 @@
-// @ts-check
 import { useState } from "react";
 
 import { Dialog } from "@headlessui/react";
@@ -12,7 +11,7 @@ export default function Header() {
   let [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-opacity-30 backdrop-blur-lg backdrop-filter firefox:bg-opacity-90 dark:border-gray-700">
+    <nav className="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-opacity-30 backdrop-blur-lg backdrop-filter dark:border-gray-700">
       <div className="mx-auto flex max-w-3xl items-center justify-between space-x-4 p-4">
         <Link href="/" passHref>
           <button className="h-min font-semibold text-2xl hover:text-zinc-600 dark:hover:text-zinc-300">
@@ -30,9 +29,6 @@ export default function Header() {
           <Link href="/about" passHref>
             <HeaderButton>About</HeaderButton>
           </Link>
-          {/* <Link href="/blog" passHref>
-            <HeaderButton>Blog</HeaderButton>
-          </Link> */}
           <Link href="/projects" passHref>
             <HeaderButton>Projects</HeaderButton>
           </Link>
@@ -48,7 +44,6 @@ export default function Header() {
           onClose={() => setIsOpen(false)}
           className="fixed inset-0 z-50 md:hidden"
         >
-          {/* The backdrop, rendered as a fixed sibling to the panel container */}
           <div
             className="fixed inset-0 bg-black/30 backdrop-blur-sm"
             aria-hidden="true"

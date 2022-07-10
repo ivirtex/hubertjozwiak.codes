@@ -21,8 +21,8 @@ export default function About() {
       <div className="text-lg">
         <p>
           As you probably saw on the main page, my name is Hubert, but people on
-          the Internet call me <b>ivirtex</b>. I am 18 years old software
-          developer from Poland.
+          the Internet call me <b>ivirtex</b>. I am software developer from
+          Poland.
         </p>
 
         <p>
