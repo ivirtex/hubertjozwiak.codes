@@ -10,22 +10,31 @@ import networkArchLogo from "../../../public/networkarch/app_icon.png";
 
 export default function NetworkArch() {
   return (
-    <Layout>
+    <Layout showAnimatedBg>
       <Head>
         <title>NetworkArch</title>
         <link rel="shortcut icon" href="/public/networkarch/favicon.ico" />
       </Head>
       <div className="w-full">
-        <div className="flex flex-col items-start md:flex-row-reverse">
+        <div className="flex flex-col items-center md:flex-row-reverse md:items-start">
           <div className="max-w-sm py-4 px-10">
             <Image src={networkArchLogo} alt="App logo" />
             <Link href="/projects/networkarch/privacyPolicy" passHref>
-              <button className="w-full">
-                <InteractiveCard className="">Privacy Policy</InteractiveCard>
+              <button className="w-full py-2">
+                <InteractiveCard className="flex justify-center">
+                  Privacy Policy
+                </InteractiveCard>
               </button>
             </Link>
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">
+              <button className="w-full">
+                <InteractiveCard className="flex justify-center">
+                  Terms of Use
+                </InteractiveCard>
+              </button>
+            </a>
           </div>
-          <div className="m-auto flex flex-col items-center justify-center md:items-start md:justify-start">
+          <div className="m-auto flex flex-col place-content-center items-center md:items-start">
             <div className="flex flex-row">
               <span className="font-extrabold text-black text-4xl dark:text-white md:text-6xl">
                 Network
