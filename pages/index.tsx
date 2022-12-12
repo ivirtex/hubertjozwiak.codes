@@ -30,17 +30,17 @@ export default function Home() {
       </div>
 
       <div className="space-y-3">
-        <Link href="/about" passHref>
+        <Link href="/about" passHref legacyBehavior>
           <button className="w-full">
             <InteractiveCard>About</InteractiveCard>
           </button>
         </Link>
-        <Link href="/projects" passHref>
+        <Link href="/projects" passHref legacyBehavior>
           <button className="w-full">
             <InteractiveCard>Projects</InteractiveCard>
           </button>
         </Link>
-        <Link href="/contact" passHref>
+        <Link href="/contact" passHref legacyBehavior>
           <button className="w-full">
             <InteractiveCard>Contact</InteractiveCard>
           </button>

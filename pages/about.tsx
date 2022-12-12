@@ -48,8 +48,8 @@ export default function About() {
 
         <p>
           <br /> Feel free to reach out to me on{" "}
-          <Link href="/contact" passHref>
-            <a className="link">/contact</a>
+          <Link href="/contact" passHref className="link">
+            /contact
           </Link>{" "}
           and check out my{" "}
           <a href={github} target="_blank" rel="noreferrer" className="link">

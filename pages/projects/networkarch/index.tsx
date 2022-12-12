@@ -19,7 +19,7 @@ export default function NetworkArch() {
         <div className="flex flex-col items-center md:flex-row-reverse md:items-start">
           <div className="max-w-sm py-4 px-10">
             <Image src={networkArchLogo} alt="App logo" />
-            <Link href="/projects/networkarch/privacyPolicy" passHref>
+            <Link href="/projects/networkarch/privacyPolicy" passHref legacyBehavior>
               <button className="w-full py-2">
                 <InteractiveCard className="flex justify-center">
                   Privacy Policy
